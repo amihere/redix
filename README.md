@@ -1,6 +1,8 @@
 # Redix
 
-**TODO: Add description**
+## Blurb
+Redix is a simple way to connect elixir apps to Redis.
+Playing around with some commands here and there.
 
 ## Installation
 
