@@ -20,6 +20,7 @@ defmodule RedixAF do
 
   def connect_redis do
     {:ok, conn} = Redix.start_link("redis://localhost:6379/3", name: :redix)
+    Redix.command(conn, ["SET", "ready", "3391"])
     Redix.stop(conn)
   end
 end
